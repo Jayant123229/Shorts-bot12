@@ -19,7 +19,7 @@ def generate_video():
         gemini_api_key = data.get("gemini_api_key")
 
         genai.configure(api_key=gemini_api_key)
-        model = genai.GenerativeModel("gemini-1.5-flash")
+        model = genai.GenerativeModel("gemini-3.5-flash")
 
         prompt = f"""
         Write Episode {ep_num} of thriller series '{series_title}' featuring Kabir.
